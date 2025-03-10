@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom"
 import { ArrowRight, Calendar } from "lucide-react"
 import { Button } from "../components/ui/button"
+import drupalImage from "../assets/drupal7to10.png"
+import performanceImage from "../assets/drupal-performance.png"
+import headImage from "../assets/headless.png"
+import customImage from "../assets/custom.png"
+import secureImage from "../assets/secure.png"
+
 
 // Mock blog data
 const posts = [
@@ -10,7 +16,7 @@ const posts = [
     excerpt:
       "Learn the step-by-step process for migrating your legacy Drupal 7 site to the latest Drupal 10 platform, including content migration strategies and potential pitfalls to avoid.",
     date: "2023-11-15",
-    image: "https://placehold.co/800x400/png",
+    image: drupalImage,
     category: "Migration",
   },
   {
@@ -19,7 +25,7 @@ const posts = [
     excerpt:
       "Discover how to significantly improve your Drupal site's performance by implementing Redis for caching and Varnish as a reverse proxy cache.",
     date: "2023-10-22",
-    image: "https://placehold.co/800x400/png",
+    image: performanceImage,
     category: "Performance",
   },
   {
@@ -28,7 +34,7 @@ const posts = [
     excerpt:
       "A comprehensive tutorial on creating decoupled Drupal applications using React as the frontend, with practical examples and best practices.",
     date: "2023-09-18",
-    image: "https://placehold.co/800x400/png",
+    image: headImage,
     category: "Development",
   },
   {
@@ -37,7 +43,7 @@ const posts = [
     excerpt:
       "An in-depth look at when to create custom entity types in Drupal instead of using content types, and a step-by-step guide on implementation.",
     date: "2023-08-05",
-    image: "https://placehold.co/800x400/png",
+    image: customImage,
     category: "Development",
   },
   {
@@ -46,7 +52,7 @@ const posts = [
     excerpt:
       "Learn about the critical security measures every Drupal site should implement, from module updates to custom security configurations.",
     date: "2023-07-12",
-    image: "https://placehold.co/800x400/png",
+    image: secureImage,
     category: "Security",
   },
 ]
@@ -91,12 +97,12 @@ export default function BlogPage() {
                 <h2 className="mt-4 text-2xl font-bold">{post.title}</h2>
                 <p className="mt-2 text-muted-foreground">{post.excerpt}</p>
                 <div className="mt-6">
-                  <Link to={`/blog/${post.id}`}>
-                    <Button variant="outline" size="sm">
-                      Read More
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
+                <Link to={`/blog/${post.id}`}>
+  <Button variant="outline" size="sm">
+    Read More
+    <ArrowRight className="ml-2 h-4 w-4" />
+  </Button>
+</Link>
                 </div>
               </div>
             </div>

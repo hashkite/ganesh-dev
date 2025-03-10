@@ -4,7 +4,9 @@ import Header from "./components/header"
 import Footer from "./components/footer"
 import HomePage from "./pages/home"
 import ProjectsPage from "./pages/projects"
+import ProjectDetail from "./pages/projectdetail";
 import BlogPage from "./pages/blog"
+import BlogPost from "./pages/blogpost"
 import ContactPage from "./pages/contact"
 import LandingPage from "./pages/homePage"
 import "./index.css"
@@ -19,6 +21,8 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/projectdetail" element={<ProjectDetail />} />
+              <Route path="/blog/:id" element={<BlogPost />} /> 
               <Route path="/blog" element={<BlogPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/home" element={< LandingPage/>} />

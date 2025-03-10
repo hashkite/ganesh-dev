@@ -101,12 +101,13 @@ export default function ProjectsPage() {
                 ))}
               </div>
               <div className="mt-6">
-                <Link to={`/projects/${project.id}`}>
-                  <Button variant="outline" size="sm">
-                    View Details
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
+              <Link to={`/projectdetail/${project.id}`}>
+  <Button variant="outline" size="sm">
+    View Details
+    <ArrowRight className="ml-2 h-4 w-4" />
+  </Button>
+</Link>
+
               </div>
             </div>
           </div>
