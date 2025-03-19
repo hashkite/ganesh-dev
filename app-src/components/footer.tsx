@@ -7,17 +7,17 @@ export default function Footer() {
       <div className="container flex flex-col md:flex-row items-center justify-between py-10 md:py-8">
         <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
           <Link href="/" className="font-bold text-xl mb-2">
-            <span className="text-primary">Drupal</span>Dev
+            <span className="text-primary">Dev</span>Ganesh
           </Link>
           <p className="text-sm text-muted-foreground text-center md:text-left">
-            Building exceptional Drupal experiences since 2015
+            Building exceptional Drupal experiences since 2013
           </p>
         </div>
 
         <div className="flex flex-col items-center md:items-end">
           <div className="flex space-x-4 mb-4">
             <Link
-              href="https://github.com"
+              href="https://github.com/ganesh41?tab=overview&from=2025-03-01&to=2025-03-19"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary"
@@ -35,7 +35,7 @@ export default function Footer() {
               <span className="sr-only">Twitter</span>
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/fly2ganesh"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary"

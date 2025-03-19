@@ -13,24 +13,70 @@ export default function AboutPage() {
 
   const experiences = [
     {
-      title: "Senior Drupal Developer",
-      company: "Web Solutions Inc.",
-      period: "2020 - Present",
-      description:
-        "Lead developer for enterprise Drupal projects, mentoring junior developers, and implementing best practices.",
+      title: "Technical Consultant",
+      company: "Hash Kite",
+      period: "Oct 2024 - Present · 6 mos",
+      description: "India",
     },
     {
-      title: "Full Stack Developer",
-      company: "Digital Agency",
-      period: "2017 - 2020",
-      description:
-        "Developed and maintained multiple Drupal sites and integrated with various third-party services and APIs.",
+      title: "Consultant",
+      company: "Famaash · Full-time",
+      period: "Sep 2022 - Present · 2 yrs 7 mos",
+      description: "United States · Remote",
     },
     {
-      title: "Web Developer",
-      company: "Tech Startup",
-      period: "2015 - 2017",
-      description: "Built responsive websites and implemented custom Drupal modules for client projects.",
+      title: "Member of BNI",
+      company: "BNI Global",
+      period: "Nov 2024 - Present · 5 mos",
+      description: "",
+    },
+    {
+      title: "Senior Drupal developer",
+      company: "McKinsey & Company · Freelance",
+      period: "Sep 2022 - Jan 2024 · 1 yr 5 mos",
+      description: "United States · Remote",
+    },
+    {
+      title: "Drupal consultant",
+      company: "Digital Polygon · Freelance",
+      period: "Jul 2021 - Sep 2022 · 1 yr 3 mos",
+      description: "United States · Remote",
+    },
+    {
+      title: "Senior Developer",
+      company: "Acquia · Full-time",
+      period: "Jul 2020 - Jul 2021 · 1 yr 1 mo",
+      description: "Pune, Maharashtra, India",
+    },
+    {
+      title: "Frontend Engineer",
+      company: "Acquia",
+      period: "Oct 2018 - Jul 2020 · 1 yr 10 mos",
+      description: "Pune Area, India",
+    },
+    {
+      title: "Software Developer",
+      company: "Particle41",
+      period: "Aug 2017 - Oct 2018 · 1 yr 3 mos",
+      description: "Pune",
+    },
+    {
+      title: "Software Engineer",
+      company: "WhiteHedge Technologies",
+      period: "Aug 2016 - Aug 2017 · 1 yr 1 mo",
+      description: "Pune Area, India",
+    },
+    {
+      title: "Software Engineer",
+      company: "BeeClicks",
+      period: "Oct 2015 - Aug 2016 · 11 mos",
+      description: "Pune Area, India",
+    },
+    {
+      title: "Project Engineer",
+      company: "SFPL",
+      period: "Jul 2013 - Aug 2015 · 2 yrs 2 mos",
+      description: "Pune Area, India",
     },
   ]
 
@@ -43,7 +89,7 @@ export default function AboutPage() {
           <div className="sticky top-24">
             <div className="relative w-full aspect-square rounded-lg overflow-hidden mb-6">
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/ganesh-devkate.png?height=400&width=400"
                 alt="Developer Portrait"
                 fill
                 className="object-cover"
@@ -52,11 +98,11 @@ export default function AboutPage() {
             <div className="space-y-4">
               <div>
                 <h3 className="text-lg font-medium">Location</h3>
-                <p className="text-muted-foreground">San Francisco, CA</p>
+                <p className="text-muted-foreground">Pune Maharashtra, India</p>
               </div>
               <div>
                 <h3 className="text-lg font-medium">Email</h3>
-                <p className="text-muted-foreground">hello@drupaldeveloper.com</p>
+                <p className="text-muted-foreground">ganeshdevkate@gmail.com</p>
               </div>
               <div>
                 <h3 className="text-lg font-medium">Available for</h3>
@@ -71,27 +117,32 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold mb-4">My Journey</h2>
             <div className="prose dark:prose-invert max-w-none">
               <p>
-                I'm a passionate Drupal developer with over 8 years of experience building complex web applications and
-                content management systems. My journey in web development began with a fascination for creating digital
-                experiences that solve real-world problems.
+                Passionate about crafting powerful digital experiences, I have spent over 11 years mastering Drupal and
+                web development. From building high-performance applications to leading technical teams, my journey has
+                been driven by a commitment to innovation, scalability, and user-centric design.
               </p>
               <p>
-                After completing my degree in Computer Science, I discovered Drupal and was immediately drawn to its
-                flexibility and powerful architecture. Since then, I've dedicated my career to mastering Drupal
-                development while staying current with modern front-end technologies.
+                As the Technical Director at Hashkite Pvt Ltd, I specialize in leveraging Drupal's capabilities to
+                deliver cutting-edge solutions. My expertise spans PHP, JavaScript, SQL, and modern front-end frameworks
+                like React and Angular. I thrive on architecting scalable platforms, optimizing performance, and
+                ensuring seamless user experiences.
               </p>
               <p>
-                I specialize in creating custom Drupal solutions that combine robust back-end architecture with elegant,
-                user-friendly interfaces. My approach focuses on performance, scalability, and maintainability—ensuring
-                that the websites I build not only look great but also function flawlessly.
+                Previously, as a Senior Drupal Developer, I played a pivotal role in developing dynamic interfaces and
+                integrating cloud-based solutions. My deep understanding of Acquia Cloud and Site Studio has been
+                instrumental in delivering enterprise-level applications that are both robust and intuitive.
               </p>
               <p>
-                When I'm not coding, you can find me contributing to open-source projects, speaking at web development
-                conferences, or exploring new technologies that can enhance my development workflow.
+                Beyond development, I am passionate about mentoring teams, contributing to open-source projects, and
+                staying ahead of industry trends. Whether it's optimizing workflows, enhancing digital accessibility, or
+                speaking at tech conferences, I constantly seek opportunities to push the boundaries of web development.
+              </p>
+              <p>
+                Every project I undertake is more than just code—it's about building seamless digital experiences that
+                make an impact. Let's connect and create something extraordinary together.
               </p>
             </div>
           </section>
-
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-6">Experience</h2>
             <div className="space-y-8">

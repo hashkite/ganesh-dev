@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Code, Database, Globe, Server } from "lucide-react"
+import { ArrowRight, Code, Database, Globe, Server,  Lightbulb, Cloud } from "lucide-react"
 import Logo from './assets/ganesh-devkate.png';
 
 export default function Home() {
@@ -59,52 +59,58 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-12 md:py-24">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">My Services</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Specialized in Drupal development and integration with modern web technologies
-          </p>
+<section className="py-16 md:py-24 bg-gradient-to-b from-gray-100 dark:from-gray-900 to-transparent">
+  <div className="text-center mb-12">
+    <h2 className="text-4xl font-bold mb-4 text-primary">What I Offer</h2>
+    <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+      Delivering cutting-edge web solutions with expertise in Drupal, front-end technologies, and scalable architectures.
+    </p>
+  </div>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {[
+      {
+        title: "Drupal Development",
+        icon: <Globe className="h-8 w-8 text-primary" />,
+        description: "Custom Drupal themes, module development, and migrations from legacy systems to the latest Drupal versions.",
+      },
+      {
+        title: "Front-end Development",
+        icon: <Code className="h-8 w-8 text-primary" />,
+        description: "Building modern web interfaces with React, Next.js, and Vue.js, seamlessly integrated with Drupal.",
+      },
+      {
+        title: "API Development",
+        icon: <Database className="h-8 w-8 text-primary" />,
+        description: "Developing robust APIs with Drupal REST, JSON:API, GraphQL, and custom endpoints for seamless integrations.",
+      },
+      {
+        title: "Performance Optimization",
+        icon: <Server className="h-8 w-8 text-primary" />,
+        description: "Enhancing Drupal site speed, scalability, and security to handle high-traffic environments.",
+      },
+      {
+        title: "Drupal Consulting",
+        icon: <Lightbulb className="h-8 w-8 text-primary" />,
+        description: "Providing expert guidance on Drupal architecture, best practices, and project roadmaps for businesses.",
+      },
+      {
+        title: "Cloud & DevOps",
+        icon: <Cloud className="h-8 w-8 text-primary" />,
+        description: "Deploying and managing scalable Drupal applications on AWS, Acquia Cloud, and Kubernetes with CI/CD pipelines.",
+      },
+    ].map((service, index) => (
+      <div key={index} className="bg-card p-6 rounded-xl border shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+        <div className="h-16 w-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+          {service.icon}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-card p-6 rounded-lg border shadow-sm">
-            <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-              <Globe className="h-6 w-6 text-primary" />
-            </div>
-            <h3 className="text-xl font-bold mb-2">Drupal Development</h3>
-            <p className="text-muted-foreground">
-              Custom Drupal theme and module development, site building, and migrations from legacy systems.
-            </p>
-          </div>
-          <div className="bg-card p-6 rounded-lg border shadow-sm">
-            <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-              <Code className="h-6 w-6 text-primary" />
-            </div>
-            <h3 className="text-xl font-bold mb-2">Front-end Development</h3>
-            <p className="text-muted-foreground">
-              Modern front-end development with React, Next.js, and headless Drupal integrations.
-            </p>
-          </div>
-          <div className="bg-card p-6 rounded-lg border shadow-sm">
-            <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-              <Database className="h-6 w-6 text-primary" />
-            </div>
-            <h3 className="text-xl font-bold mb-2">API Development</h3>
-            <p className="text-muted-foreground">
-              Building robust APIs with Drupal's REST, JSON:API, and custom endpoints for seamless integrations.
-            </p>
-          </div>
-          <div className="bg-card p-6 rounded-lg border shadow-sm">
-            <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-              <Server className="h-6 w-6 text-primary" />
-            </div>
-            <h3 className="text-xl font-bold mb-2">Performance Optimization</h3>
-            <p className="text-muted-foreground">
-              Optimizing Drupal sites for speed, scalability, and security to handle high traffic loads.
-            </p>
-          </div>
-        </div>
-      </section>
+        <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
+        <p className="text-muted-foreground">{service.description}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* Featured Projects */}
       <section className="py-12 md:py-24">

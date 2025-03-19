@@ -1,4 +1,4 @@
-// File: /home/hashkite/projects/ganesh-dev/app-src/app/contact/page.tsx
+// File: /home/kite/projects/ganesh-dev/app-src/app/contact/page.tsx
 import * as entry from '../../../../app/contact/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

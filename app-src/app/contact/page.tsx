@@ -57,7 +57,7 @@ export default function ContactPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <CardDescription className="text-base">hello@drupaldeveloper.com</CardDescription>
+            <CardDescription className="text-base">ganeshdevkate@gmail.com</CardDescription>
           </CardContent>
         </Card>
 
@@ -69,7 +69,7 @@ export default function ContactPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <CardDescription className="text-base">+1 (555) 123-4567</CardDescription>
+            <CardDescription className="text-base">+91-9922611550</CardDescription>
           </CardContent>
         </Card>
 
@@ -81,7 +81,7 @@ export default function ContactPage() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <CardDescription className="text-base">San Francisco, CA</CardDescription>
+            <CardDescription className="text-base">Pune Maharashtra, India</CardDescription>
           </CardContent>
         </Card>
       </div>
@@ -155,10 +155,18 @@ export default function ContactPage() {
         </div>
 
         <div className="bg-muted rounded-lg overflow-hidden h-[400px] lg:h-auto">
-          {/* This would be a map in a real implementation */}
-          <div className="w-full h-full flex items-center justify-center bg-primary/10">
-            <p className="text-center text-muted-foreground">Map would be displayed here</p>
-          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4755.9407909044285!2d73.91163139999999!3d18.6136433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x27fe01a55dd1edcb%3A0xe98ac1f6b109b37d!2sHASH%20KITE%20PRIVATE%20LIMITED!5e1!3m2!1sen!2sin!4v1742367198038!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="HASH KITE PRIVATE LIMITED location map"
+            className="w-full h-full"
+            aria-label="Map showing the location of HASH KITE PRIVATE LIMITED"
+          />
         </div>
       </div>
     </div>

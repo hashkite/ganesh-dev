@@ -3,6 +3,11 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Calendar, Clock } from "lucide-react"
+import drupal from "../assets/drupal7to10.png"
+import headImage from "../assets/headless.png"
+import performence from "../assets/drupal-performance.png"
+import secureImage from "../assets/secure.png"
+import implement from "../assets/implement-accessi.png"
 
 export default function BlogPage() {
   const posts = [
@@ -14,7 +19,7 @@ export default function BlogPage() {
       date: "May 15, 2023",
       readTime: "8 min read",
       author: "John Doe",
-      image: "/placeholder.svg?height=400&width=600",
+      image: drupal,
       categories: ["Migration", "Drupal 9"],
     },
     {
@@ -25,7 +30,7 @@ export default function BlogPage() {
       date: "April 3, 2023",
       readTime: "10 min read",
       author: "John Doe",
-      image: "/placeholder.svg?height=400&width=600",
+      image: headImage,
       categories: ["Headless", "Next.js", "API"],
     },
     {
@@ -36,7 +41,7 @@ export default function BlogPage() {
       date: "March 12, 2023",
       readTime: "12 min read",
       author: "John Doe",
-      image: "/placeholder.svg?height=400&width=600",
+      image: performence,
       categories: ["Performance", "Enterprise"],
     },
     {
@@ -58,7 +63,7 @@ export default function BlogPage() {
       date: "January 15, 2023",
       readTime: "7 min read",
       author: "John Doe",
-      image: "/placeholder.svg?height=400&width=600",
+      image: implement,
       categories: ["Accessibility", "Theming"],
     },
     {
@@ -69,7 +74,7 @@ export default function BlogPage() {
       date: "December 5, 2022",
       readTime: "11 min read",
       author: "John Doe",
-      image: "/placeholder.svg?height=400&width=600",
+      image: secureImage,
       categories: ["Security", "Best Practices"],
     },
   ]
@@ -126,9 +131,9 @@ export default function BlogPage() {
                   </Badge>
                 ))}
               </div>
-              <Link href={`/blog/${post.id}`} className="block group-hover:text-primary">
+              {/* <Link href={`/blog/${post.id}`} className="block group-hover:text-primary"> */}
                 <h2 className="text-xl font-bold mb-2">{post.title}</h2>
-              </Link>
+              {/* </Link> */}
               <p className="text-muted-foreground mb-4">{post.excerpt}</p>
               <div className="flex items-center text-sm text-muted-foreground mb-4">
                 <div className="flex items-center mr-4">
@@ -141,10 +146,11 @@ export default function BlogPage() {
                 </div>
               </div>
               <Button asChild variant="link" className="p-0">
-                <Link href={`/blog/${post.id}`}>
-                  Read More <ArrowRight className="ml-2 h-4 w-4" />
+                <Link href={`/blogdetail?title=${encodeURIComponent(post.title)}`}>
+                 Read More <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
-              </Button>
+             </Button>
+
             </div>
           </article>
         ))}
@@ -152,4 +158,3 @@ export default function BlogPage() {
     </div>
   )
 }
-
