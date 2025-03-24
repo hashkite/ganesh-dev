@@ -59,7 +59,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-<section className="py-16 md:py-24 bg-gradient-to-b from-gray-100 dark:from-gray-900 to-transparent">
+<section className="py-16 md:py-24 bg-gradient-to-b to-transparent">
   <div className="text-center mb-12">
     <h2 className="text-4xl font-bold mb-4 text-primary">What I Offer</h2>
     <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
@@ -111,13 +111,12 @@ export default function Home() {
   </div>
 </section>
 
-
       {/* Featured Projects */}
       <section className="py-12 md:py-24">
         <div className="flex justify-between items-center mb-12">
           <h2 className="text-3xl font-bold">Featured Projects</h2>
           <Button asChild variant="outline">
-            <Link href="/projects">View All Projects</Link>
+            <Link href="/project">View All Projects</Link>
           </Button>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -141,11 +140,11 @@ export default function Home() {
                   <Badge variant="secondary">React</Badge>
                   <Badge variant="secondary">API</Badge>
                 </div>
-                {/* <Button asChild variant="link" className="p-0">
-                  <Link href={`/projects/${project}`}>
+                <Button asChild variant="link" className="p-0">
+                  <Link href={`/projectdetail/${project}`}>
                     View Project <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
-                </Button> */}
+                </Button>
               </div>
             </div>
           ))}
@@ -169,4 +168,3 @@ export default function Home() {
     </div>
   )
 }
-

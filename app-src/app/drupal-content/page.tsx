@@ -13,6 +13,7 @@ type DrupalItem = {
     field_image?: { data?: { id: string } };
   };
 };
+
 type DrupalFile = {
   id: string;
   type: string;
@@ -20,29 +21,46 @@ type DrupalFile = {
     uri?: { url: string };
   };
 };
+
 const DrupalArticle = () => {
   const [article, setArticle] = useState<DrupalItem | null>(null);
   const [imageUrl, setImageUrl] = useState<string | null>(null);
+  const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
   useEffect(() => {
-    fetch("https://dhangar.in.ddev.site/jsonapi/node/article/596e9993-24c7-4010-b7b6-7569344a5f90?include=field_image")
-      .then((response) => response.json())
-      .then((data) => {
+    const fetchArticle = async () => {
+      try {
+        const response = await fetch(
+          `${apiUrl}/jsonapi/node/article/3062ac43-93fe-4cdd-ac5a-78e3bea0889f?include=field_image`
+
+        );
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log(data);
+
         if (data.data) {
           setArticle(data.data);
 
           // Extract image URL from included files
           const imageId = data.data.relationships?.field_image?.data?.id;
           const media = data.included?.find((item: DrupalFile) => item.id === imageId);
-          
+
           if (media?.attributes?.uri?.url) {
-            const fileUrl = media.attributes.uri.url;
-            setImageUrl(`https://dhangar.in.ddev.site${fileUrl.replace("public://", "/sites/default/files/")}`);
+            const fileUrl = media.attributes.uri.url.replace("public://");
+            setImageUrl(`${apiUrl}${fileUrl}`);
           }
         }
-      })
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchArticle();
+  }, [apiUrl]);
 
   if (!article) return <p className="text-center text-xl">Loading...</p>;
 

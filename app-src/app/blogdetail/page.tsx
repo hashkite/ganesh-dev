@@ -11,6 +11,7 @@ import headImage from "../assets/headless.png"
 import performanceImage from "../assets/drupal-performance.png"
 import secureImage from "../assets/secure.png"
 import implement from "../assets/implement-accessi.png"
+import custom from "../assets/custom.png"
 
 export default function BlogDetailPage() {
   const searchParams = useSearchParams()
@@ -250,12 +251,13 @@ export default function BlogDetailPage() {
 
     {
       id: 4,
-      title: "Custom Module Development Best Practices in Drupal",
-      excerpt: "Discover essential best practices for building efficient, scalable, and maintainable custom modules in Drupal 10.",
+      title: "Custom Module Development Best Practices in Drupal 10",
+      excerpt:
+        "Discover essential best practices for building efficient, scalable, and maintainable custom modules in Drupal 10.",
       date: "March 10, 2023",
       readTime: "14 min read",
       author: "John Doe",
-      image: "/custom-module-dev.png",
+      image: custom,
       categories: ["Development", "Modules", "Drupal 10"],
       content: `
         <p>Drupal’s modular architecture allows developers to extend and customize its functionality through custom modules. Whether you're building a simple feature or a complex integration, following best practices ensures maintainability, performance, and security.</p>
@@ -322,13 +324,14 @@ export default function BlogDetailPage() {
         
         <h2>Conclusion</h2>
         <p>By following best practices for custom module development, you can ensure high performance, security, and maintainability. Leverage Drupal’s built-in APIs, focus on performance, and document your work to create robust modules for enterprise applications.</p>
-      `
+      `,
     },
 
     {
       id: 5,
       title: "Implementing Accessibility in Drupal Themes",
-      excerpt: "Learn how to create accessible Drupal themes that ensure an inclusive experience for all users and comply with WCAG 2.1 standards.",
+      excerpt:
+        "Learn how to create accessible Drupal themes that ensure an inclusive experience for all users and comply with WCAG 2.1 standards.",
       date: "January 15, 2023",
       readTime: "7 min read",
       author: "John Doe",
@@ -379,7 +382,7 @@ export default function BlogDetailPage() {
         
         <h2>Conclusion</h2>
         <p>By following best practices, using Drupal’s built-in accessibility features, and regularly testing for compliance, developers can create inclusive Drupal themes that provide a better experience for all users.</p>
-      `
+      `,
     },
 
     {

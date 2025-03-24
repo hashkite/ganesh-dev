@@ -8,6 +8,7 @@ import headImage from "../assets/headless.png"
 import performence from "../assets/drupal-performance.png"
 import secureImage from "../assets/secure.png"
 import implement from "../assets/implement-accessi.png"
+import custom from "../assets/custom.png"
 
 export default function BlogPage() {
   const posts = [
@@ -52,7 +53,7 @@ export default function BlogPage() {
       date: "February 28, 2023",
       readTime: "9 min read",
       author: "John Doe",
-      image: "/placeholder.svg?height=400&width=600",
+      image: custom,
       categories: ["Development", "Modules", "Drupal 10"],
     },
     {
@@ -113,7 +114,7 @@ export default function BlogPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post) => (
           <article key={post.id} className="bg-card rounded-lg border overflow-hidden shadow-sm group">
-            <Link href={`/blog/${post.id}`} className="block">
+            {/* <Link href={`/blog/${post.id}`} className="block"> */}
               <div className="relative h-48 w-full">
                 <Image
                   src={post.image || "/placeholder.svg"}
@@ -122,7 +123,7 @@ export default function BlogPage() {
                   className="object-cover transition-transform group-hover:scale-105"
                 />
               </div>
-            </Link>
+            {/* </Link> */}
             <div className="p-6">
               <div className="flex flex-wrap gap-2 mb-3">
                 {post.categories.map((category, index) => (

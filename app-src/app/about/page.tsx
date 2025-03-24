@@ -111,38 +111,43 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-
         <div className="md:col-span-2">
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-4">My Journey</h2>
-            <div className="prose dark:prose-invert max-w-none">
-              <p>
-                Passionate about crafting powerful digital experiences, I have spent over 11 years mastering Drupal and
-                web development. From building high-performance applications to leading technical teams, my journey has
-                been driven by a commitment to innovation, scalability, and user-centric design.
-              </p>
-              <p>
-                As the Technical Director at Hashkite Pvt Ltd, I specialize in leveraging Drupal's capabilities to
-                deliver cutting-edge solutions. My expertise spans PHP, JavaScript, SQL, and modern front-end frameworks
-                like React and Angular. I thrive on architecting scalable platforms, optimizing performance, and
-                ensuring seamless user experiences.
-              </p>
-              <p>
-                Previously, as a Senior Drupal Developer, I played a pivotal role in developing dynamic interfaces and
-                integrating cloud-based solutions. My deep understanding of Acquia Cloud and Site Studio has been
-                instrumental in delivering enterprise-level applications that are both robust and intuitive.
-              </p>
-              <p>
-                Beyond development, I am passionate about mentoring teams, contributing to open-source projects, and
-                staying ahead of industry trends. Whether it's optimizing workflows, enhancing digital accessibility, or
-                speaking at tech conferences, I constantly seek opportunities to push the boundaries of web development.
-              </p>
-              <p>
-                Every project I undertake is more than just code—it's about building seamless digital experiences that
-                make an impact. Let's connect and create something extraordinary together.
-              </p>
-            </div>
-          </section>
+  <section className="mb-12">
+    <h2 className="text-3xl font-extrabold mb-6 text-gradient">My Journey</h2>
+    <div className="prose dark:prose-invert max-w-none leading-relaxed text-lg">
+      <p className="mb-4">
+        Passionate about crafting powerful digital experiences, I have spent over <strong>11 years</strong> mastering 
+        Drupal and web development. From building high-performance applications to leading technical teams, my journey 
+        has been driven by a commitment to <span className="text-primary font-semibold">innovation, scalability, and 
+        user-centric design</span>.
+      </p>
+      <p className="mb-4">
+        As the <strong>Technical Director at Hashkite Pvt Ltd</strong>, I specialize in leveraging Drupal's capabilities 
+        to deliver cutting-edge solutions. My expertise spans 
+        <span className="text-primary font-medium"> PHP, JavaScript, SQL</span>, and modern front-end frameworks like 
+        <span className="text-primary font-medium"> React,Next and Angular</span>. I thrive on architecting scalable 
+        platforms, optimizing performance, and ensuring seamless user experiences.
+      </p>
+      <p className="mb-4">
+        Previously, as a <strong>Senior Drupal Developer</strong>, I played a pivotal role in developing dynamic 
+        interfaces and integrating cloud-based solutions. My deep understanding of <span className="text-primary 
+        font-medium">Acquia Cloud and Site Studio</span> has been instrumental in delivering enterprise-level 
+        applications that are both robust and intuitive.
+      </p>
+      <p className="mb-4">
+        Beyond development, I am passionate about <span className="text-primary font-medium">mentoring teams, 
+        contributing to open-source projects</span>, and staying ahead of industry trends. Whether it's optimizing 
+        workflows, enhancing digital accessibility, or speaking at tech conferences, I constantly seek opportunities 
+        to push the boundaries of web development.
+      </p>
+      <p className="text-xl font-semibold italic text-gray-300">
+        Every project I undertake is more than just code—it's about building seamless digital experiences that make an 
+        impact. <span className="text-primary font-bold">Let's connect and create something extraordinary together.</span>
+      </p>
+    </div>
+  </section>
+
+
           <section className="mb-12">
             <h2 className="text-2xl font-bold mb-6">Experience</h2>
             <div className="space-y-8">
