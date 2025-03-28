@@ -78,7 +78,7 @@ export default function Header() {
                 ))}
                 <Button asChild className="mt-4">
                   <Link href="/contact" onClick={() => setIsOpen(false)}>
-                    Hire Me
+                    Contact Me
                   </Link>
                 </Button>
               </nav>
