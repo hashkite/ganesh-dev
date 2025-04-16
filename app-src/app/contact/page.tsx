@@ -7,8 +7,6 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, MapPin, Phone } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -47,7 +45,7 @@ export default function ContactPage() {
       <p className="text-xl text-muted-foreground mb-12 max-w-3xl">
         Have a project in mind or want to discuss how I can help with your Drupal development needs? Get in touch!
       </p>
-
+{/* 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
         <Card>
           <CardHeader className="pb-2">
@@ -84,7 +82,7 @@ export default function ContactPage() {
             <CardDescription className="text-base">Pune Maharashtra, India</CardDescription>
           </CardContent>
         </Card>
-      </div>
+      </div> */}
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
@@ -152,21 +150,6 @@ export default function ContactPage() {
               </div>
             )}
           </form>
-        </div>
-
-        <div className="bg-muted rounded-lg overflow-hidden h-[400px] lg:h-auto">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4755.9407909044285!2d73.91163139999999!3d18.6136433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x27fe01a55dd1edcb%3A0xe98ac1f6b109b37d!2sHASH%20KITE%20PRIVATE%20LIMITED!5e1!3m2!1sen!2sin!4v1742367198038!5m2!1sen!2sin"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="HASH KITE PRIVATE LIMITED location map"
-            className="w-full h-full"
-            aria-label="Map showing the location of HASH KITE PRIVATE LIMITED"
-          />
         </div>
       </div>
     </div>

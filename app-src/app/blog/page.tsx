@@ -58,7 +58,6 @@ export default function BlogPage() {
             categoryMap[item.id] = item.attributes.name;
           }
         });
-  
         data.data.forEach((article: any) => {
           const imageId = article.relationships?.field_image?.data?.id;
           const media = data.included?.find((item: any) => item.id === imageId);
@@ -74,10 +73,8 @@ export default function BlogPage() {
             );
           } else {
             article.attributes.field_categories = ["Uncategorized"];
-          }
-          
+          } 
         });
-  
         setImageUrls(urls);
       } catch (error) {
         console.error("Error fetching data:", error);
